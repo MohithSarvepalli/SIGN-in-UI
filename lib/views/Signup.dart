@@ -139,104 +139,77 @@ class Signup extends StatelessWidget {
               allowDrawingOutsideViewBox: true,
             ),
           ),
-          Transform.translate(
-            offset: Offset(46.w, 308.h),
-            child:
-                // Adobe XD layer: 'Rectangle' (shape)
-                Container(
-              width: 246.w,
-              height: 48.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24.0),
-                color: const Color(0x21838383),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x29000000),
-                    offset: Offset(0.w, 3.h),
-                    blurRadius: 6,
-                  ),
-                ],
-              ),
-            ),
+          
+          
+          new Container(
+            margin:
+                EdgeInsets.only(top: 240.0, left: 50, right: 90, bottom: 90),
+            child: Material(
+                borderRadius: BorderRadius.circular(40.0),
+                color: Colors.grey[300],
+                elevation: 0.0,
+                child: TextFormField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color:Colors.transparent),
+                          borderRadius: BorderRadius.circular(50)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      hintText: 'Email/Mobile',
+                      filled: true,
+                    ))
+                    ),
           ),
-          Transform.translate(
-            offset: Offset(46.w, 242.h),
-            child:
-                // Adobe XD layer: 'Rectangle' (shape)
-                Container(
-              width: 246.w,
-              height: 48.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24.0),
-                color: const Color(0x21838383),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x29000000),
-                    offset: Offset(0.w, 3.h),
-                    blurRadius: 6,
-                  ),
-                ],
-              ),
-            ),
+          new Container(
+            margin:
+                EdgeInsets.only(top: 310.0, left: 50, right: 90, bottom: 90),
+            child: Material(
+                borderRadius: BorderRadius.circular(40.0),
+                color: Colors.grey[300],
+                elevation: 0.0,
+                child: TextFormField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color:Colors.transparent),
+                          borderRadius: BorderRadius.circular(50)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      hintText: 'Password',
+                      filled: true,
+                    ))
+                    ),
           ),
-          Transform.translate(
-            offset: Offset(144.w, 245.h),
-            child: Text(
-              'Email/Mobile',
-              style: TextStyle(
-                fontFamily: 'Lato',
-                fontSize: 15,
-                color: const Color(0xff5c5c5c),
-                height: 2.1333333333333333,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(156.w, 310.h),
-            child: Text(
-              'Password',
-              style: TextStyle(
-                fontFamily: 'Lato',
-                fontSize: 15,
-                color: const Color(0xff5c5c5c),
-                height: 2.1333333333333333,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(46.w, 374.h),
-            child:
-                // Adobe XD layer: 'Rectangle' (shape)
-                Container(
-              width: 246.w,
-              height: 48.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24.0),
-                color: const Color(0x21838383),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x29000000),
-                    offset: Offset(0.w, 3.h),
-                    blurRadius: 6,
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(132.w, 377.h),
-            child: Text(
-              'Repeat password',
-              style: TextStyle(
-                fontFamily: 'Lato',
-                fontSize: 15,
-                color: const Color(0xff5c5c5c),
-                height: 2.1333333333333333,
-              ),
-              textAlign: TextAlign.left,
-            ),
+          
+          new Container(
+            margin:
+                EdgeInsets.only(top: 380.0, left: 50, right: 90, bottom: 90),
+            child: Material(
+                borderRadius: BorderRadius.circular(40.0),
+                color: Colors.grey[300],
+                elevation: 0.0,
+                child: TextFormField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color:Colors.transparent),
+                          borderRadius: BorderRadius.circular(50)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      hintText: 'Repeat Password',
+                      filled: true,
+                    ))
+                    ),
           ),
           Transform.translate(
             offset: Offset(-59.w, -108.h),
@@ -483,7 +456,7 @@ class Signup extends StatelessWidget {
                 // Adobe XD layer: 'icons8-show-passwor…' (shape)
                 Container(
               width: 19.w,
-              height: 19.h,
+              height: 25.h,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: const AssetImage('assets/images/PasswordIcon.png'),
