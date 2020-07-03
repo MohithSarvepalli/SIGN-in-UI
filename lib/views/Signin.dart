@@ -69,7 +69,7 @@ class Signin extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(81.0.w, 440.0.h),
+            offset: Offset(90.0.w, 440.0.h),
             child:
                 // Adobe XD layer: 'Rectangle' (shape)
                 Container(
@@ -155,7 +155,9 @@ class Signin extends StatelessWidget {
             child:
                 // Adobe XD layer: 'Rectangle' (shape)
                 Container(
-              width: 246.0,
+              padding:
+                  EdgeInsets.only(top: 80.0, left: 50, right: 40, bottom: 20),
+              width: 240.0,
               height: 48.0,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24.0),
@@ -170,31 +172,51 @@ class Signin extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(144.0.w, 293.33.h),
-            child: Text(
-              'Email/Mobile',
-              style: TextStyle(
-                fontFamily: 'Lato',
-                fontSize: 15,
-                color: const Color(0xff5c5c5c),
-                height: 2.1333333333333333,
-              ),
-              textAlign: TextAlign.left,
-            ),
+          new Container(
+            margin:
+                EdgeInsets.only(top: 280.0, left: 50, right: 110, bottom: 90),
+            child: Material(
+                borderRadius: BorderRadius.circular(40.0),
+                color: Colors.grey[300],
+                elevation: 0.0,
+                child: TextFormField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color:Colors.transparent),
+                          borderRadius: BorderRadius.circular(50)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      hintText: 'Email/Mobile',
+                      filled: true,
+                    ))
+                    ),
           ),
-          Transform.translate(
-            offset: Offset(156.0.w, 358.33.h),
-            child: Text(
-              'Password',
-              style: TextStyle(
-                fontFamily: 'Lato',
-                fontSize: 15,
-                color: const Color(0xff5c5c5c),
-                height: 2.1333333333333333,
-              ),
-              textAlign: TextAlign.left,
-            ),
+          new Container(
+            margin:
+                EdgeInsets.only(top: 360.0, left: 50, right: 110, bottom: 90),
+            child: Material(
+                borderRadius: BorderRadius.circular(40.0),
+                color: Colors.grey[300],
+                elevation: 0.0,
+                child: TextFormField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color:Colors.transparent),
+                          borderRadius: BorderRadius.circular(50)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      hintText: 'Password',
+                      filled: true,
+                    ))
+                    ),
           ),
           Transform.translate(
             offset: Offset(-59.0.w, -108.0.h),
@@ -429,7 +451,7 @@ class Signin extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(71.0.w, 371.0.h),
+            offset: Offset(71.0.w, 381.0.h),
             child:
                 // Icon Bifur(Don't remove)
                 Container(
